@@ -1,0 +1,1 @@
+python main.py --config example.env --output example.sql
