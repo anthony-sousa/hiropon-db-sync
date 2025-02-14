@@ -90,7 +90,7 @@ class DatabaseSync:
                 elif default.upper() == "CURRENT_TIMESTAMP":
                     col_def += " DEFAULT CURRENT_TIMESTAMP"  # Sem aspas
                 else:
-                    safe_default = default.replace("'", "''")  # Evita aspas duplas
+                    safe_default = default.replace("'", "")  # Evita aspas duplas
                     col_def += f" DEFAULT '{safe_default}'"
             else:
                 col_def += f" DEFAULT {default}"
